@@ -4,7 +4,7 @@ import SearchBar from './components/SearchBar';
 import Forecast from './components/Forecast';
 import CurrentTemp from './components/CurrentTemp'
 // import TempGraph from './components/TempGraph';
-import BarChart from './components/BarChart';
+// import BarChart from './components/BarChart';
 import './index.css';
 
 class App extends Component {
