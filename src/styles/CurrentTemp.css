@@ -1,0 +1,31 @@
+.tempChart {
+    margin-top: 1em;
+    width: 50%;
+    margin-left: 26%;
+    border-style: none;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+.pressure {
+    font-weight: bolder;
+    margin-top: 2em;
+}
+
+.humidity {
+    font-weight: bolder;
+    padding-left: 41%;
+    margin-top: 2em;
+}
+
+.humidityNum {
+    font-weight: light;
+    padding-left: 41%;
+    margin-top: 2em;
+}
+
+.pressureNum {
+    font-weight: light;
+}

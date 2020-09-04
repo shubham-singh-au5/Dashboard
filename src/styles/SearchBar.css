@@ -1,0 +1,22 @@
+form {
+    text-align: center;
+}
+
+input {
+    width: 45%;
+    padding: 1%;
+    margin-top: 1em;
+    border-radius: 12px;
+    border-bottom: snow;
+    border-left: none;
+    border-top: snow;
+}
+
+.fa-map-marker {
+    z-index: 10;
+}
+
+
+
+  
+
