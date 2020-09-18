@@ -1,16 +1,16 @@
-import { css, jsx } from "@emotion/core";
+import { css} from "@emotion/core";
 import styled from "@emotion/styled";
 // import "./index.css";
 import React from "react";
-import { render } from "react-dom";
+// import { render } from "react-dom";
 import SlideToggle from "react-slide-toggle";
 
-const Number = styled.span`
-  font-variant-numeric: tabular-nums;
-  min-width: 1em;
-  display: inline-block;
-  text-align: left;
-`;
+// const Number = styled.span`
+//   font-variant-numeric: tabular-nums;
+//   min-width: 1em;
+//   display: inline-block;
+//   text-align: left;
+// `;
 
 const Toggle = styled.button`
   font-size: 1rem;

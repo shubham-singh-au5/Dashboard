@@ -1,16 +1,16 @@
-import { css, jsx } from "@emotion/core";
+import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 // import "./index.css";
 import React from "react";
-import { render } from "react-dom";
+// import { render } from "react-dom";
 import SlideToggle from "react-slide-toggle";
 
-const Number = styled.span`
-  font-variant-numeric: tabular-nums;
-  min-width: 1em;
-  display: inline-block;
-  text-align: left;
-`;
+// const Number = styled.span`
+//   font-variant-numeric: tabular-nums;
+//   min-width: 1em;
+//   display: inline-block;
+//   text-align: left;
+// `;
 
 const Toggle = styled.button`
   font-size: 1rem;
@@ -54,18 +54,18 @@ const Product1 = () => (
 
                                         <p style={{ color: 'grey' }}>DELIVERY DETAILS</p>
                                         <label for="exampleInputEmail1">Company Name</label>
-                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Nirma INC" required  />
+                                        <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Nirma INC" required  />
 
                                         <p className=" mt-4" style={{ color: 'grey' }}>LOCATION1</p>
                                         <label for="exampleInputEmail1">Address</label>
-                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Kamal Nath Road, Kurla East, Mumbai - 400024" required />
+                                        <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Kamal Nath Road, Kurla East, Mumbai - 400024" required />
 
                                         <p className=" mt-4" style={{ color: 'grey' }}>STORE INCHARGE</p>
                                         <label className=" mt-2" for="exampleInputEmail1"> Name  </label>
-                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Kaydee russell" required />
+                                        <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Kaydee russell" required />
 
                                         <label className=" mt-2" for="exampleInputEmail1">Contact No.</label>
-                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "8745236415" required/>
+                                        <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "8745236415" required/>
                                     </div>
 
                                     <div className='col-md-6'>
@@ -77,14 +77,14 @@ const Product1 = () => (
 
                                         <p className=" mt-4" style={{ color: 'grey' }}>LOCATION2</p>
                                         <label for="exampleInputEmail1">Address</label>
-                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Kamal Nath Road, Kurla East, Mumbai - 400024" required />
+                                        <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Kamal Nath Road, Kurla East, Mumbai - 400024" required />
 
                                         <p className=" mt-4" style={{ color: 'grey' }}>STORE INCHARGE</p>
                                         <label className=" mt-2" for="exampleInputEmail1"> Name  </label>
-                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Rohit Sharma" required />
+                                        <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Rohit Sharma" required />
 
                                         <label className=" mt-2" for="exampleInputEmail1">Contact No.</label>
-                                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "8965321458" required />
+                                        <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "8965321458" required />
                                     </div>
                                 </div>
 

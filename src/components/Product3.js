@@ -1,16 +1,16 @@
-import { css, jsx } from "@emotion/core";
+import { css } from "@emotion/core";
 import styled from "@emotion/styled";
 // import "./index.css";
 import React from "react";
-import { render } from "react-dom";
+// import { render } from "react-dom";
 import SlideToggle from "react-slide-toggle";
 
-const Number = styled.span`
-  font-variant-numeric: tabular-nums;
-  min-width: 1em;
-  display: inline-block;
-  text-align: left;
-`;
+// const Number = styled.span`
+//   font-variant-numeric: tabular-nums;
+//   min-width: 1em;
+//   display: inline-block;
+//   text-align: left;
+// `;
 
 const Toggle = styled.button`
   font-size: 1rem;
@@ -21,7 +21,33 @@ const Toggle = styled.button`
   background: transparent;
 `;
 
-const Product3 = () => (
+const Product3 = () => {
+
+  const [state, setState] = React.useState({
+    company: "RT Enterprises",
+    address: "Kamal Nath Road, Kurla East, Mumbai - 400024",
+    name: "Rohit Sharma",
+    contact: '8547123695'
+  })
+
+  const { company,
+    address,
+    name,
+    contact } = state
+
+    let handleChange = (e) => {
+      // console.log(e.target.value)
+      console.log({
+        ...state,
+         [e.target.name]: e.target.value,
+     })
+      setState({
+         ...state,
+          [e.target.name]: e.target.value,
+      })
+    }
+
+  return (
   <div className="row mt-5">
     <div className="col-md-2 ml-3">
 
@@ -54,11 +80,11 @@ const Product3 = () => (
 
                     <p style={{ color: 'grey' }}>DELIVERY DETAILS</p>
                     <label for="exampleInputEmail1">Company Name</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Nirma INC" required />
+                    <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = {company} required name = 'company' onChange = {handleChange} />
 
                     {/* <p className=" mt-4" style={{ color: 'grey' }}>LOCATION1</p> */}
                     <label for="exampleInputEmail1">Address</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Kamal Nath Road, Kurla East, Mumbai - 400024" required />
+                    <input type="text" className="form-control" name = 'address' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = {address} required onChange = {handleChange} />
 
                     {/* <p className=" mt-4" style={{ color: 'grey' }}>STORE INCHARGE</p>
                                         <label className=" mt-2" for="exampleInputEmail1"> Name  </label>
@@ -81,10 +107,10 @@ const Product3 = () => (
 
                     <p className=" mt-4" style={{ color: 'grey' }}>STORE INCHARGE</p>
                     <label className="" for="exampleInputEmail1"> Name  </label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "Nikhil Chindwani" required />
+                    <input type="text" className="form-control" name = 'name' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" onChange = {handleChange} value = {name} required />
 
                     <label className=" " for="exampleInputEmail1">Contact No.</label>
-                    <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" value = "8745236415" required/>
+                    <input type="text" className="form-control" name = 'contact' id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" onChange = {handleChange} value = {contact} required/>
                   </div>
                 </div>
 
@@ -180,5 +206,5 @@ const Product3 = () => (
       />
     </div>
   </div>
-);
+)};
 export default Product3;
