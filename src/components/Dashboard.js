@@ -121,17 +121,6 @@ class Dashboard extends Component {
                             For your portfolio
                         </div>
                         <div className='col-md-6'>
-                            {/* <div className="dropdown ml-2">
-                                <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                                </button>
-                                <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <span className="dropdown-item">September</span>
-                                    <span className="dropdown-item">August</span>
-                                    <span className="dropdown-item">July </span>
-                                    <span className="dropdown-item">June</span>
-                                </div>
-                            </div> */}
                             <select onChange={(value) => this.chartChange(value)}>
                                 <option value='Sep' className="dropdown-item">September</option>
                                 <option value='Aug' className="dropdown-item">August</option>

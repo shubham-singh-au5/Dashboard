@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { Formik } from "formik";
 import * as Yup from "yup";
 const ValidatedLoginForm = () => (
@@ -39,7 +39,7 @@ const ValidatedLoginForm = () => (
                     <label htmlFor="email">Email</label>
                     <input
                         name="email"
-                        type="text"
+                        type="email"
                         placeholder="Enter your email"
                         value={values.email}
                         onChange={handleChange}
@@ -63,9 +63,11 @@ const ValidatedLoginForm = () => (
                         <div className="input-feedback">{errors.password}</div>
                     )}
                         
+                        <Link to = '/dashboard'>
                             <button type="submit" disabled={isSubmitting}>
                                 Login
                             </button>
+                        </Link>
 
                 </form>
             );
